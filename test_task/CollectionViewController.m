@@ -193,7 +193,7 @@ static NSString * const reuseIdentifier = @"Cell";
         _selectedPhotosCount--;
     }
     
-    if (_selectedPhotosCount > 20) {
+    if (_selectedPhotosCount > MAX_SEL_COUNT) {
         [cell toggleSelectionOverlay];
         picture.selected = NO;
         _selectedPhotosCount = 20;
